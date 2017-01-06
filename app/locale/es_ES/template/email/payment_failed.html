@@ -1,7 +1,4 @@
-{* This is a comment block
-
-Use vars: {{var var_name}}
-*}<!--@subject Recordatorio de transacci&oacute;n de pago fallida @-->
+<!--@subject Payment Transaction Failed Reminder @-->
 <!--@vars
 {"var reason":"Transaction Failed Reason",
 "var checkoutType":"Checkout Type",
@@ -19,49 +16,49 @@ Use vars: {{var var_name}}
 <table>
     <thead>
         <tr>
-            <th>Transacci&oacute;n de pago fallida.</th>
+            <th>Habido un fallo en la transacción de pago.</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>
-                <p style="font-size: 16px; line-height: 20px; margin: 0;">
-                    <b>Raz&oacute;n</b><br />
+                <p>
+                    <b>Razón</b><br />
                     {{var reason}}
                 </p>
-                <p style="font-size: 16px; line-height: 20px; margin: 0;">
-                    <b>Tipo de transacci&oacute;n</b><br />
+                <p>
+                    <b>Tipo de caja</b><br />
                     {{var checkoutType}}
                 </p>
-                <p style="font-size: 16px; line-height: 20px; margin: 0;">
-                    <b>Comprador:</b><br />
+                <p>
+                    <b>Cliente:</b><br />
                     <a href="mailto:{{var customerEmail}}">{{var customer}}</a> &lt;{{var customerEmail}}&gt;
                 </p>
-                <p style="font-size: 16px; line-height: 20px; margin: 0;">
-                    <b>Productos</b><br />
+                <p>
+                    <b>Artículos</b><br />
                     {{var items}}
                 </p>
-                <p style="font-size: 16px; line-height: 20px; margin: 0;">
+                <p>
                     <b>Total:</b><br />
                     {{var total}}
                 </p>
-                <p style="font-size: 16px; line-height: 20px; margin: 0;">
-                    <b>Direccion de facturaci&oacute;n:</b><br />
+                <p>
+                    <b>Dirección de facturación:</b><br />
                     {{var billingAddress.format('html')}}
                 </p>
-                <p style="font-size: 16px; line-height: 20px; margin: 0;">
-                    <b>Direccion de env&iacute;o:</b><br />
+                <p>
+                    <b>Dirección de envío:</b><br />
                     {{var shippingAddress.format('html')}}
                 </p>
-                <p style="font-size: 16px; line-height: 20px; margin: 0;">
-                    <b>M&eacute;todo de env&iacute;o:</b><br />
+                <p>
+                    <b>Método de envío:</b><br />
                     {{var shippingMethod}}
                 </p>
-                <p style="font-size: 16px; line-height: 20px; margin: 0;">
-                    <b>M&eacute;todo de pago:</b><br />
+                <p>
+                    <b>Método de pago:</b><br />
                     {{var paymentMethod}}
                 </p>
-                <p style="font-size: 16px; line-height: 20px; margin: 0;">
+                <p>
                     <b>Fecha y hora:</b><br />
                     {{var dateAndTime}}
                 </p>
